@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Generate the JSON output from git-cliff
 output=$(git cliff --unreleased --bump --context)
 
