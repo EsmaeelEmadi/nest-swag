@@ -1,0 +1,13 @@
+{
+    "hooks": {
+      "before:git:release": "git cliff -o CHANGELOG.md"
+    },
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}",
+      "push": true
+    },
+    "npm": {
+      "publish": false
+    }
+  }
